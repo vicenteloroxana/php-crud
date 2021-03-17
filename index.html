@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+            background-image: url(img.jpg);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        label {
+            font-size: 20px;
+            color:aqua;
+        }
+        .btn{
+            font-size: 18px;
+
+        }
+        h1{
+            text-align: center;
+            color:aqua;
+        }
+        .login{
+            height: 50%;
+            width: 40%;
+            background-color: black;
+            opacity: .5;
+        }
+        .contenedor{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 69%;
+        }
+        input{
+            
+            
+            font-size: 22px;
+            
+        }
+        #usuario{
+            font-size: 22px;
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <form class="login" action="perfiles.php" method="post">
+        <h1>Inicio de Sesión</h1>  
+        <div class="contenedor">
+            <div class="usu" >
+                <label>Usuario: </label><br>
+                <input id="usuario" type="text" name="usu">
+              
+            </div>  
+            <br>
+            <div >
+                <label>Contraseña: </label><br>
+                <input class="clave"type="password" name="con">
+                
+            </div>
+            <br>
+            <div>
+              <input class="btn"type="submit" name="enviando" value="Login">
+            </div>
+        </div>
+    
+    </form>
+    
+</body>
+</html>
